@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"nodemon auth/server.js\" \"next dev\"",
+    "dev": "concurrently \"node auth/server.js\" \"next dev\"",
     "build": "next build",
     "lint": "next lint",
     "export": "npm run build && next export -o _static"
