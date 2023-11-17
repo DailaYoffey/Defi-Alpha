@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+.top_title {
+    font-family: 'Inter';
+    font-size: 34px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.top_title_withAddress {
+    font-family: 'Inter';
+    font-size: 27px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.token_ID {
+    font-family: 'Inter';
+}
+
+.genesis_img {
+    width: 120px !important;
+    height: 120px !important;
+}
+
+.selected_img {
+    border-radius: 10px;
+    border: 5px solid #FF3D00;
+}
+
+.gas_price {
+    font-size: 25px;
+    font-family: "Inter";
+}
+
+.body_title {
+    font-family: 'Inter';
+}
