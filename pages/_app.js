@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import '../styles/globals.css';
 import '../styles/styles.css';
+import '../styles/main.css';
 
 const MyApp = ({ Component, pageProps }) => (
   <>

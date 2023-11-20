@@ -21,8 +21,9 @@
 }
 
 .genesis_img {
-    width: 120px !important;
-    height: 120px !important;
+    width: 200px !important;
+    height: 280px !important;
+    margin-top: 50px;
 }
 
 .selected_img {
@@ -37,4 +38,33 @@
 
 .body_title {
     font-family: 'Inter';
+}
+
+.redeem_div {
+    /* background-color: black; */
+    /* margin-top: 10%  !important; */
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.genesis_pass_connect_btn {
+    color: white;
+    background-color: #47a1ff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+
+.background-genesis_div {
+    z-index: -1;
+}
+
+.checking_pass_div {
+    margin-top: 10%;
+    height: 100vh;
+}
+
+.coming_title {
+    font-size: 20px;
+    color: yellow
 }

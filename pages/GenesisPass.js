@@ -5,6 +5,7 @@ import { ethers } from 'ethers';
 import detectEthereumProvider from '@metamask/detect-provider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { TitleText } from '../components';
 
 const SIGNING_SERVER_URL = 'https://redeemer.upstreet.ai/';
 
@@ -239,27 +240,34 @@ export default function Mint() {
                       </button>
                     </>
                   ) : (
-                    <p>You don't have any eligible tokens for Claim.</p>
+                    <div className='checking_pass_div'>
+                      <h1 className="uppercase font-bold text-white text-xl md:text-xl bg-gradient-to-br bg-clip-text mt-3 top_title_withoutAddress">
+                        Checking your genesis Pass Tokens
+                      </h1>
+                      <TitleText title={<>Pass Token for BVerse <span className='coming_title'>(Coming Soon..)</span></>} textStyles="text-center" />
+                    </div>
                   )}
                 </div>
               </>
             ) : (
               <>
-                <div className="z-1 md:max-w-3xl w-full glass filter backdrop-blur-sm py-4 rounded-md px-20 md:px-20 flex flex-col items-center">
+                <div className="md:max-w-3xl glass filter backdrop-blur-sm py-4 rounded-md px-20 md:px-20 flex flex-col items-center redeem_div">
                   <h1 className="uppercase font-bold text-white text-xl md:text-xl bg-gradient-to-br bg-clip-text mt-3 top_title_withoutAddress">
-                    Redeem your genesis pass
+                    Claim your genesis pass
                   </h1>
-                  <img src="./images/webaverse genesis pass.png" alt="" className="genesis_img mt-6" />
+                  <TitleText title={<>Pass Token for BVerse</>} textStyles="text-center" />
+                  <img src="./Genesis Pass.png" alt="" className="genesis_img" />
                   <button
-                    className="bg-[#000000] text-[#ffffff] mt-6 mb-2 border-2 border-[#5F2EEA] px-8 py-4 text-xl font-bold hover:bg-[#5F2EEA] hover:text-[#ffffff]"
+                    className="bg-[#000000] text-[#ffffff] mt-6 mb-2 border-2 border-[#5F2EEA] px-8 py-4 text-xl font-bold hover:bg-[#5F2EEA] hover:text-[#ffffff] genesis_pass_connect_btn"
                     onClick={handleConnectWallet}
                   >
-                    Connect wallet
+                    Connect Wallet
                   </button>
                 </div>
               </>
             )}
           </div>
+          <div className="gradient-03 background-genesis_div" />
         </div>
       </div>
       <ToastContainer
