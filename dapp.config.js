@@ -2,8 +2,8 @@ const FORTMATIC_KEY = process.env.NEXT_PUBLIC_FORTMATIC_KEY
 const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 
 const config = {
-  title: 'BVerse Phase 1: Claim',
-  description: 'Redeem your Genesis Pass for BVerse Community Pass here.',
+  title: 'Blockify Phase 1: Claim',
+  description: 'Redeem your Genesis Pass for Blockify Community Pass here.',
   webaverseGenesisPassContractAddress: process.env.NEXT_PUBLIC_WEBAVERSEGENESISPASS,
   redeemerContractAddress: process.env.NEXT_PUBLIC_REDEEMER
 }
@@ -20,7 +20,7 @@ const onboardOptions = {
         walletName: 'walletLink',
         preferred: true,
         rpcUrl: RPC_URL,
-        appName: 'BVerse Phase 1: Claim'
+        appName: 'Blockify Phase 1: Claim'
       },
       {
         walletName: 'fortmatic',
@@ -38,7 +38,7 @@ const onboardOptions = {
       {
         walletName: 'lattice',
         rpcUrl: RPC_URL,
-        appName: 'BVerse Phase 1: Claim'
+        appName: 'Blockify Phase 1: Claim'
       },
       {
         walletName: 'keepkey',

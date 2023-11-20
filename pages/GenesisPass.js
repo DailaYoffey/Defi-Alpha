@@ -244,7 +244,7 @@ export default function Mint() {
                       <h1 className="uppercase font-bold text-white text-xl md:text-xl bg-gradient-to-br bg-clip-text mt-3 top_title_withoutAddress">
                         Checking your genesis Pass Tokens
                       </h1>
-                      <TitleText title={<>Pass Token for BVerse <span className='coming_title'>(Coming Soon..)</span></>} textStyles="text-center" />
+                      <TitleText title={<>Pass Token for Blockify <span className='coming_title'>(Coming Soon..)</span></>} textStyles="text-center" />
                     </div>
                   )}
                 </div>
@@ -255,7 +255,7 @@ export default function Mint() {
                   <h1 className="uppercase font-bold text-white text-xl md:text-xl bg-gradient-to-br bg-clip-text mt-3 top_title_withoutAddress">
                     Claim your genesis pass
                   </h1>
-                  <TitleText title={<>Pass Token for BVerse</>} textStyles="text-center" />
+                  <TitleText title={<>Pass Token for Blockify</>} textStyles="text-center" />
                   <img src="./Genesis Pass.png" alt="" className="genesis_img" />
                   <button
                     className="bg-[#000000] text-[#ffffff] mt-6 mb-2 border-2 border-[#5F2EEA] px-8 py-4 text-xl font-bold hover:bg-[#5F2EEA] hover:text-[#ffffff] genesis_pass_connect_btn"

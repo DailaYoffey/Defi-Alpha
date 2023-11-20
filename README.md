@@ -1,1 +1,1 @@
-## BVerse Website for Landing Page (Beta version)
+## Blockify Website for Landing Page (Beta version)

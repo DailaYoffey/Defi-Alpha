@@ -3,14 +3,14 @@ const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
 import { config } from '../dapp.config'
 
-const BVerse = require('../contracts/abi/BVerse.json')
-const BVerseContract = new web3.eth.Contract(BVerse.abi, config.BVerseContractAddress)
+const Blockify = require('../contracts/abi/Blockify.json')
+const BlockifyContract = new web3.eth.Contract(Blockify.abi, config.BlockifyContractAddress)
 
 const redeemer = require('../contracts/abi/Redeemer.json')
 const redeemerContract = new web3.eth.Contract(redeemer.abi, config.redeemerContractAddress)
 
 export const isApprovedForAll = async () => {
-  const isApproved = await BVerseContract.methods.isApprovedForAll(window.ethereum.selectedAddress, config.redeemerContractAddress).call();
+  const isApproved = await BlockifyContract.methods.isApprovedForAll(window.ethereum.selectedAddress, config.redeemerContractAddress).call();
   return isApproved;
 }
 
@@ -37,14 +37,14 @@ export const setApprove = async () => {
   )
   
   let gasPrice = await web3.eth.getGasPrice();
-  let estimatedGas = await BVerseContract.methods.setApprovalForAll(config.redeemerContractAddress, true).estimateGas({from: window.ethereum.selectedAddress});
+  let estimatedGas = await BlockifyContract.methods.setApprovalForAll(config.redeemerContractAddress, true).estimateGas({from: window.ethereum.selectedAddress});
 
   const tx = {
-    to: config.BVerseContractAddress,
+    to: config.BlockifyContractAddress,
     from: window.ethereum.selectedAddress,
     gasPrice: web3.utils.toHex(gasPrice),
     gas: web3.utils.toHex(estimatedGas),
-    data: BVerseContract.methods
+    data: BlockifyContract.methods
       .setApprovalForAll(config.redeemerContractAddress, true)
       .encodeABI(),
     nonce: nonce.toString(16)
