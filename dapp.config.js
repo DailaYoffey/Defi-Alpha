@@ -15,35 +15,35 @@ const onboardOptions = {
   walletSelect: {
     wallets: [
       { walletName: 'metamask', preferred: true },
-      { walletName: 'coinbase', preferred: true },
-      {
-        walletName: 'walletLink',
-        preferred: true,
-        rpcUrl: RPC_URL,
-        appName: 'Blockify Phase 1: Claim'
-      },
-      {
-        walletName: 'fortmatic',
-        apiKey: FORTMATIC_KEY,
-        preferred: true
-      },
-      { walletName: 'trust', preferred: true, rpcUrl: RPC_URL },
-      { walletName: 'gnosis', preferred: true },
-      { walletName: 'authereum' },
+      // { walletName: 'coinbase', preferred: true },
+      // {
+      //   walletName: 'walletLink',
+      //   preferred: true,
+      //   rpcUrl: RPC_URL,
+      //   appName: 'Blockify Phase 1: Claim'
+      // },
+      // {
+      //   walletName: 'fortmatic',
+      //   apiKey: FORTMATIC_KEY,
+      //   preferred: true
+      // },
+      // { walletName: 'trust', preferred: true, rpcUrl: RPC_URL },
+      // { walletName: 'gnosis', preferred: true },
+      // { walletName: 'authereum' },
 
-      {
-        walletName: 'ledger',
-        rpcUrl: RPC_URL
-      },
-      {
-        walletName: 'lattice',
-        rpcUrl: RPC_URL,
-        appName: 'Blockify Phase 1: Claim'
-      },
-      {
-        walletName: 'keepkey',
-        rpcUrl: RPC_URL
-      }
+      // {
+      //   walletName: 'ledger',
+      //   rpcUrl: RPC_URL
+      // },
+      // {
+      //   walletName: 'lattice',
+      //   rpcUrl: RPC_URL,
+      //   appName: 'Blockify Phase 1: Claim'
+      // },
+      // {
+      //   walletName: 'keepkey',
+      //   rpcUrl: RPC_URL
+      // }
     ]
   },
   walletCheck: [
