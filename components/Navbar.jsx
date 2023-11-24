@@ -8,6 +8,7 @@ import { navVariants } from '../utils/motion';
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
 
 import { mainnet, arbitrum } from '@wagmi/core/chains'
+import MetamaskButton from './ConnectWalletButton';
 
 // 1. Define constants
 const projectId = '10dd96df3c1b27c7c028d125071be835'
@@ -43,7 +44,7 @@ const Navbar = () => (
         className="w-[24px] h-[24px] object-contain"
       />
       <h2 className="font-extrabold text-[32px] leading-[30.24px] text-white header_title">
-        BVerse
+        Blockify
       </h2> 
       <h3 className='font-extrabold text-[20px] text-white pt-1 hover:text-red-400 hover:cursor-pointer z-20'><Link href="/Marketplace">Marketplace</Link></h3>
       <h3 className='font-extrabold text-[20px] text-white pt-1 hover:text-red-400 hover:cursor-pointer z-20'>Decentralize</h3>
