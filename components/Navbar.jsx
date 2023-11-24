@@ -8,7 +8,7 @@ import { navVariants } from '../utils/motion';
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
 
 import { mainnet, arbitrum } from '@wagmi/core/chains'
-import MetamaskButton from './ConnectWalletButton';
+import MetamaskButton from './MetamaskButton';
 
 // 1. Define constants
 const projectId = '10dd96df3c1b27c7c028d125071be835'
@@ -50,7 +50,8 @@ const Navbar = () => (
       <h3 className='font-extrabold text-[20px] text-white pt-1 hover:text-red-400 hover:cursor-pointer z-20'>Decentralize</h3>
       <h3 className='font-extrabold text-[20px] text-white pt-1 hover:text-red-400 hover:cursor-pointer z-20'><Link href="/GenesisPass">Genesis Pass</Link></h3>
       <h3 className='font-extrabold text-[20px] text-white pt-1 hover:text-red-400 hover:cursor-pointer z-20'><Link href="https://blockify-beta.notion.site/Blockify-Project-Modules-00dfc960175946f4bb1424d9e52324f6?pvs=4" target='_blank'>FAQ</Link></h3>
-      <w3m-button />
+      {/* <w3m-button /> */}
+      <MetamaskButton />
     <script type="module" src="main.js"></script>
       <img
         src="/menu.svg"
