@@ -257,7 +257,7 @@ const Marketplace = () => (
   </div>
   <div className="footer">
     <div className="footer-main">
-      Etiam et id tincidunt faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.
+    The leading NFT Marketplace on Ethereum Home to the next generation of digital creators. Discover the best NFT collections.
     </div>
     <div className="footer-navigate">
       <div className="nav">
