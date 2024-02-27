@@ -3,7 +3,7 @@ const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
 import { config } from '../dapp.config'
 
-const BVerse = require('../contracts/abi/BVerse.json')
+const BVerse = require('../contracts/abi/Bverse.json')
 const BVerseContract = new web3.eth.Contract(BVerse.abi, config.BVerseContractAddress)
 
 const redeemer = require('../contracts/abi/Redeemer.json')
